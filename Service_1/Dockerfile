@@ -1,11 +1,15 @@
-FROM python:latest
+FROM python:3.6.8
 
-RUN mkdir /opt/SFIA2/
+RUN apt update
+RUN apt install python3 -y
+RUN apt install python3-pip -y
 
-COPY . /opt/SFIA2/
+WORKDIR /opt/service_1
 
-WORKDIR /opt/SFIA2/
+COPY . ${WORKDIR}
 
 RUN pip3 install -r requirements.txt
 
-ENTRYPOINT ["python3", "app.py"]
+EXPOSE 5000
+
+ENTRYPOINT ["/usr/local/bin/python", "app.py"]
