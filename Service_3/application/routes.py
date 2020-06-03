@@ -4,7 +4,7 @@ import random
 
 @app.route('/buildingfullname2', methods=['GET'])
 def secondname():
-    list2=['benson', 'hesketh', 'ahmed']
+    list2=['benson', 'hesketh', 'ahmed', 'Diana', 'Ama', 'lucy']
     response2=list2[random.randint(0, len(list2)-1)]
 
     return response2
