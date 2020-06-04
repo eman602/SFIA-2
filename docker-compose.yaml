@@ -7,6 +7,10 @@ services:
     - target: 5000
       published: 5000
       protocol: tcp
+
+    environment:
+        FULLNAME_DB_URI: ${FULLNAME_DB_URI}
+        SECRET_KEY: ${SECRET_KEY}
     depends_on:
       - Service_4
 
