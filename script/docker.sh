@@ -1,3 +1,3 @@
 #!/bin/bash
 source ~/bashrc
-docker  deploy --compose-file docker-compose.yaml up
+docker  --compose-file docker-compose.yaml up -d --build
