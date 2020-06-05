@@ -1,13 +1,16 @@
 version: '3.7'
 services:
   Service_1:
-    image: service_1
-    build: ./Service_1
+    image: emmanuelagyapong/service_1
+    
     ports:
     - target: 5000
       published: 5000
       protocol: tcp
-
+    networks:
+      - ingress
+    deploy:
+      replicas: 1
     environment:
         FULLNAME_DB_URI: ${FULLNAME_DB_URI}
         SECRET_KEY: ${SECRET_KEY}
@@ -15,22 +18,31 @@ services:
       - Service_4
       
   Service_2:
-    image: service_2
-    build: ./Service_2
+    image: emmanuelagyapong/service_2
+    networks:
+      - ingress
+    deploy:
+      replicas: 1
     ports:
     - target: 5000
       published: 5001
       protocol: tcp
   Service_3:
-    image: service_3
-    build: ./Service_3
+    image: emmanuelagyapong/service_3
+    networks:
+      - ingress
+    deploy:
+      replicas: 1
     ports:
     - target: 5000
       published: 5002
       protocol: tcp
   Service_4:
-    image: service_4
-    build: ./Service_4
+    image: emmanuelagyapong/service_4
+    networks:
+      - ingress
+    deploy:
+      replicas: 1
     ports:
     - target: 5000
       published: 5003
@@ -38,5 +50,9 @@ services:
     depends_on:
       - Service_2 
       - Service_3
+
+networks:
+  ingress:
+      driver: overlay
 
     
