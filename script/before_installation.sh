@@ -2,5 +2,11 @@
 sudo apt update -y
 sudo apt install python3 python3-venv python3-pip -y
 python3 -m venv venv
+source ~/bashrc
+## install ansible with pip
+pip install --user ansible
+# check that ansible has been installed
+ansible --version
+
 
 source ~/bashrc
