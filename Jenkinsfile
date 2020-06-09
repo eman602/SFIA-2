@@ -6,11 +6,11 @@ pipeline {
             steps{
                 sh 'chmod +x ./script/*'
                 sh 'bash ./script/before_installation.sh'
-                sh './script/ansible.sh'
+                sh 'bash ./script/ansible.sh'
             }
         }
         
-        stage('Deploying on docker-compose"'){
+        stage('Deploying on docker-compose'){
             agent {label 'manager_node'}
             steps{
                 
