@@ -1,4 +1,4 @@
 #!/bin/bash
 
 source ~/bashrc
-ansible-playbook -i inventory.cfg playbook.yaml
+ansible-playbook -v -i inventory.cfg playbook.yaml
