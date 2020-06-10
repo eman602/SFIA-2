@@ -11,7 +11,7 @@ pipeline {
         }
         
         stage('Deploying on docker-compose'){
-            agent {label 'manager_node'}
+            //agent {label 'manager_node'}
             steps{
                 
                 sh './script/docker.sh'
