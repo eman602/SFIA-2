@@ -1,11 +1,17 @@
-- name: install docker
-  hosts: master
+- name: install docker manager
+  hosts: manager
+  become: true
+  roles:
+    - docker-installation
+
+- name: install docker worker
+  hosts: workers
   become: true
   roles:
     - docker-installation
 
 - name: initialise docker swarm
-  hosts: master
+  hosts: manager
   become: true
   roles:
     - docker-swarm-init
