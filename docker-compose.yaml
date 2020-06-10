@@ -51,6 +51,21 @@ services:
       - Service_2 
       - Service_3
 
+  service_nginx:
+    image: emmanuelagyapong/nginx 
+    ports:
+      - "80:80"
+    networks:
+      - ingress
+    depends_on:
+      - Service_1
+      - Service_2
+      - Service_3
+      - Service_4
+    deploy:
+      replicas: 3
+
+
 networks:
   ingress:
       driver: overlay
