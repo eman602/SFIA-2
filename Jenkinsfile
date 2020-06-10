@@ -1,8 +1,8 @@
 pipeline {
-    agent none
+    agent any
     stages {
         stage('Making sure ownerships are made'){
-            agent {label 'master'}
+            //agent {label 'master'}
             steps{
                 sh 'chmod +x ./script/*'
                 sh 'bash ./script/before_installation.sh'
@@ -11,7 +11,7 @@ pipeline {
         }
         
         stage('Deploying on docker-compose'){
-            agent {label 'manager_node'}
+            //agent {label 'manager_node'}
             steps{
                 
                 sh './script/docker.sh'
