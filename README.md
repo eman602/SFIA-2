@@ -24,28 +24,18 @@ Trello : https://trello.com/b/jzxsxgkl/movie-and-book-app
 * [Contributors](#contributors)
 * [Author](#author)
 
-
-
-
 ## Brief
-The aim of this project as specified in the brief is to create a CRUD application with utilisation of supporting tools. It must have methodologies and technologies that encapsulates all core modules covered during the training. It is then to be assessed by the trainers who will assess the capabilities and concepts that were taught and assess the project against S.F.I.A. 
- In order to meet the requirements of the project I must display the following:
- * A Trello board displaying tasks in category of Completed, In progress, and etc. 
+The aim of the app was to create an app which has its functions based upon 4 microservices which would be deployed using specific DevOps tools. The Architecture of the site will be micro-services orientated which must work together.
+In more detail:-
+* Service 1 will have the ability to use Jinja2 templates which will need to interact with my application, this first service will also be required to speak to the remaining 3 services and the information received will be persisted into an SQL database. In relation to my app, I decided to create random baby name generator hence Service 1 would ideally detail the babies name that has been generated and persist it into an SQL database. 
 
- * A relational database to store data persistently for the project. The database must contain at least 2 tables excluding a table displaying Users. 
+* Service 2 for my app will generate the first name of the name that will be displayed hence from a list of names, a random number will be selected pertaining to the index of a name in the list which will then be passed on to service 4. 
 
- * A detailed risk assessment and a clear documentation from a design phase describing the architecture.  
+* Likewise, Service 3 will have surnames in a list and a random number generated pertaining to its index. The chosen number will then be sent to Service 4.
 
- * A functional CRUD application created in Python which meets the requirements set in the Trello board. 
+* The last Service_4 will create a full name made up from the results of both service 2 and 3. This will the be the Object created. The Information will be sent to Service 1 and that will add it to a database known as baby names. 
+Naturally, this project is designed in order that certain DevOps tools can be used i.e. Docker, Jenkins, Ansible and Nginx. 
 
- * A high-test coverage in the backend providing a consistent report and evidence to support a TDD approach. 
-
- * A fully designed test suites for the project as well as a well automated tests for validation of the application.   
-
- * A functioning front-end website with integrated API’s using Flask. 
-
- * Code being fully integrated into a version control system using the feature-branch model which will subsequently be built through a CI server and deployed to a cloud-based virtual machine. 
- 
  ## Methods
  My attempt at achieving the requirements is through a movie and book app project that will allow the user to first: - 
  * Add books to sell 
