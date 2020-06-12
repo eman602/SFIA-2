@@ -14,4 +14,4 @@ def home():
 
     namesData=Names.query.all()
     #print(fullname)
-    return render_template('home.html', fullname=fullname1, posts=namesData, title='Home page')
+    return render_template('home.html', fullname=fullname1, posts=namesData, title='BABY NAMES')
