@@ -7,5 +7,5 @@ def secondname():
     list2=['benson', 'hesketh', 'ahmed']
     response2=list2[random.randint(0, len(list2)-1)]
 
-    return response2.upper()
+    return response2
     
