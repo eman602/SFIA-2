@@ -24,7 +24,7 @@ services:
     deploy:
       replicas: 3
     ports:
-    - target: 5000
+    - target: 5001
       published: 5001
       protocol: tcp
   Service_3:
@@ -34,7 +34,7 @@ services:
     deploy:
       replicas: 3
     ports:
-    - target: 5000
+    - target: 5002
       published: 5002
       protocol: tcp
   Service_4:
@@ -44,7 +44,7 @@ services:
     deploy:
       replicas: 3
     ports:
-    - target: 5000
+    - target: 5003
       published: 5003
       protocol: tcp
     depends_on:
