@@ -71,13 +71,22 @@ On top of this, the user will be able to click on a generate buttom on the scree
 
 
 ## CI Pipeline
-![CIpipeline](https://user-images.githubusercontent.com/64255340/82837352-aa856600-9ec0-11ea-9422-c6cfc59ed580.png)
+![CIpipeline](https://user-images.githubusercontent.com/64255340/84571227-ceceb700-ad89-11ea-8b87-ddc03e968221.png)
+
 The continous integration pipeline begins at the  python level in which the source code is constructed in VS code and tested using python3 app.py. After the code successfully worked in the development server, the code is then pushed up to github under the repository name bookmovie_app. Currently there are 3 branches being used and the most updated one being the testing branch. This branch has a connection through webHook with hence any changes made here will be picked up by the CI tool Jenkins and automatically configured and built. 
 
 In my CI pipeline, I planned to have Jenkins run my automatic test as shown however, in reality, all code was tested using unit testing in pytest before the code was pushed up to git hub and integrated into the app. Jenkins will install the flask and import all the necessary modules. 
 
 Code is checked by Jenkins and if it is sufficient, it will then be built without an error message being sent. 
 At the very beginning of the process, all the required work are put on Trello and the required work is recieved from Trello and once is it completed, it is then updated in Trello and another piece of work is taken.
+
+The Jenkins project is built using a pipeline as opposed to a freestyle project, hence in order to keep files organised, a Jenkinsfile is utilised which essentially allows Jenkins to build specific parts of the application using environments that are prescribed to it. 
+An example is having it access different files to install docker and then set up ansible as well as having different files in different sections which the docker-compose file can launch. 
+Docker in the CI pipeline is where images of my containers are pushed to. Hence to clarify, my four microservices will each serve as a container and an image of each will be produced and pushed to my designated repository in DockerHub. This provides Jenkins the ability to the access my DockerHub as it is open source, and then pull down the image and run that image as part of the prerequisite to build my application. 
+There may also be instruction for Jenkins to update the docker images in my docker repository hence that can also be executed. 
+Ansible is also used in order to allow an environment to be initialised in the worker-node. It is also used to determine which of my nodes will play the role as the master node or the worker node. 
+Finally, the application is run entirely using Nginx. It is designed to listen on port 80 and redirect traffic to port 5000. 
+
 
 ## Tracking my Project
 the link for my Trello can be found at : https://trello.com/b/jzxsxgkl/movie-and-book-app
