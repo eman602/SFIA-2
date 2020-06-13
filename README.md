@@ -173,50 +173,23 @@ In my own code, I achieved an average of 87% test coverage although my initial a
 For my own app, I wrote 4 different tests. 
 
 ## Web application display of the app 
-![DeleteMovie](https://user-images.githubusercontent.com/64255340/82816985-0c7ba680-9e94-11ea-8d98-2fe7bfa7ef66.png)
+![webpage](https://user-images.githubusercontent.com/64255340/84581078-2f371600-add5-11ea-8c6c-abb372a01a86.png)
 
-This is the Delete Page of the side allowing an individual to enter a Book name into the form and if the book placed is within the database, they are given the ability to delete the book from the list. Upon pressing that button, they would be directed to the Book page where they would be able to see that indeed the Book has been removed from the database.  
-
-![Bookpage](https://user-images.githubusercontent.com/64255340/82817031-25845780-9e94-11ea-8761-fa01e9adaff1.png)
-
-This page host all the books that have been added to the database. In this, only the book ID, Book name, authors  name and the Genre will be displayed here. 
-
-![moviepage](https://user-images.githubusercontent.com/64255340/82817063-3634cd80-9e94-11ea-9e06-c51c68520e74.png)
-This is the same format for the movie page also where all the movies added will be displayed upon this page.  
-
-![addbook](https://user-images.githubusercontent.com/64255340/82817109-49e03400-9e94-11ea-8e24-6a8d2b79850f.png)
-In this page, an individual is able to add books and can only do so by filling in all the given forms which upon completion, they would then be redirected to the Book Page, where they can see their input data has successfully been added to the database.  
-
-![addmovie](https://user-images.githubusercontent.com/64255340/82817140-5b294080-9e94-11ea-9a3f-87f5ff11a67c.png)
-
-This page allows the user to enter a movie and its details which will be saved unto the database. If the movie is made based upon a movie, they can go to the book section and add it according to the books ID and upon submission, there would be a relationship created between the book and the movie. Deletion of this book or movie would cause the complete removal of the added information.
-
-![deletemovie2](https://user-images.githubusercontent.com/64255340/82817203-785e0f00-9e94-11ea-9417-5899e625406a.png)
-This page is similar to the delete Book page however it differs in that It will allow the user to delete the movie. 
-
-![update](https://user-images.githubusercontent.com/64255340/82817251-90359300-9e94-11ea-9644-4254313e29eb.png)
-This page allows the user to update items in the database. Hence when they enter the Book name, the system will search the database for the book name entered. If the Book can be found within the database, then all the other entered items in the remaining forms will be updated for the book name in question. 
-
+This is a display of the app. The generate buttom allows for the site to be refreshed and a new name is generated upon which it is then persisted into a database and of course a query of this database is made in order to display the list of names that have already been persisted.
 
 ## Issues with Application 
 
-* An issue with the app at the moment is that, you can add the same movie or Books more than once. 
-
-* Another issue is that when you go to update a book, if the book name is not known in the database, the application simply reloads but does not necessarily provide a reason why the page has not redirected to the book page. 
-
- 
+* An issue with the app at the moment is that, if the same name is generated, it is still persisted hence causing duplications.
 
 ## Improvements 
 
-* The Design of the site is the first thing I want to improve. Given that this is an app for Books and Movies, there should be pictures of books and movies to encourage the user to use the site. 
+* The Design of the site is the first thing I want to improve. Given that this is an app for names, there should be pictures of families. 
 
-* Furthermore, upon someone adding a movie or book, they should also have the option of attaching a picture alongside or in fact, an algorithm which fetches the picture based upon the name of the book or movie. 
+* Also making it possible for people to write a name and get feedback on whether the name is appropriate for a child. 
 
-* Another improvement is allowing users to have a personalised account on the app. 
+* Another improvement is allowing users to have a personalised account on the app.  
 
-* Another improvement is the incorporate either a selling or a renting function whereby users can sell movies or books to other users within the page.  
-
-* Another improvement is allowing a voting system on the books or movies that individuals will add to the page. 
+* Another improvement is allowing a voting system on the names that individuals will add to the page. 
 
 ## Licensing
 Copyright 2020 Emmanuel Agyapong
