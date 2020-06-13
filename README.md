@@ -93,6 +93,33 @@ Finally, the application is run entirely using Nginx. It is designed to listen o
 
 ## MoSCoW Analysis
 
+#### Must have Have
+ * You are required to create a micro-service orientated architecture for your application, this application must be composed of at least 4 services that work together.
+ 
+* Service 1 The core service – this will render the Jinja2 templates you need to interact with your application, it will also be responsible for communicating with the other 3 services, and finally for persisting some data in an SQL database.
+
+* Service 2 + 3
+These will both generate a random “Object”, this object can be whatever you like as we encourage creativity in this project.
+
+
+* Service #4 This service will also create an “Object” however this “Object” must be based upon the results of service #2 + #3 using some pre-defined rules.  Please see below for an example of how this logic can look.
+
+* Kanban Board: Asana or an equivalent Kanban Board 
+
+* You will also need to demonstrate the working CI Pipeline that you have been able to build by rolling out updates to the system, without interrupting the user experience.  
+
+#### Should Have
+* Web hooks should be used
+* Docker swarm is used over compose to enable deployment to multiple nodes.
+* Documentation includes progression throughout the project.
+
+#### Could Have
+* A fully functioning CRUD application accessible through Service 1.
+* Testing completed for front end of my application. 
+
+
+ 
+
 ## Tracking my Project
 the link for my Trello can be found at : https://trello.com/b/jzxsxgkl/movie-and-book-app
 
