@@ -146,12 +146,11 @@ This signifies the tasks which I am currently doing.
 This refers to tasks which are completed. 
 
 ## Risk Assessment 
-The link for the risk assessment can be found - https://onedrive.live.com/edit.aspx?resid=67C6B66CC3D9FFE8!105&cid=1371f661-24ed-4557-b5e7-a18b1901bf6b&ithint=file%2cxlsx&wdOrigin=OFFICECOM-WEB.MAIN.MRU 
 
 It is also shown below: -
-![riskassessment1](https://user-images.githubusercontent.com/64255340/82815927-1c928680-9e92-11ea-8e1f-a8543b0e1a17.png)
+![risk1](https://user-images.githubusercontent.com/64255340/84580465-365b2580-adcf-11ea-8ff8-ad98f1f44622.png)
 
-![riskassessment2](https://user-images.githubusercontent.com/64255340/82815949-25835800-9e92-11ea-9f84-97ec6a79898e.png)
+![risk2](https://user-images.githubusercontent.com/64255340/84580472-4115ba80-adcf-11ea-828c-ab186b7606b8.png)
 
 ## Testing
 ![coveragereport](https://user-images.githubusercontent.com/64255340/82816159-8b6fdf80-9e92-11ea-9dca-739e752fadd9.png)
