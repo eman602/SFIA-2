@@ -36,27 +36,26 @@ In more detail:-
 * The last Service_4 will create a full name made up from the results of both service 2 and 3. This will the be the Object created. The Information will be sent to Service 1 and that will add it to a database known as baby names. 
 Naturally, this project is designed in order that certain DevOps tools can be used i.e. Docker, Jenkins, Ansible and Nginx. 
 
+All these services would be deployed using Jenkins as the open-source server for continuation integration. Docker would be used for containerisation specifically docker swarm. The necessary environments will be implemented using ansible and more information of these will be shown further in this report.
+
  ## Methods
- My attempt at achieving the requirements is through a movie and book app project that will allow the user to first: - 
- * Add books to sell 
-   (Title, genre, year of release, Author, price).
- * Add movies to sell 
-    (Title, genre, year of release, Director, price).
- * Search  and read about books to buy 
 
- * Search and read about movies to buy 
+* The source code for creating the 4 different microservices will be completed within Visual studio Code due to its ease of use.
 
- * Update information about a movie or book 
+* The use of SQL will be used in order to persist the data(full name) created by all my microservices. 
 
- * Delete movie or book 
+* The Version Control System used will be GitHub and a webhook connection will be established with Jenkins in order that all features 
+pushed to GitHub will be triggered and automatically built by Jenkins and deployed unto using my IP address.
+
+* The tools for Containerisation will be docker. With Docker you can create a dockerfile for every container of your site. The options for Docker is that you can build and push your docker images to a local repository or to DockerHub which is the approach I will be going for in order that any updates or new features can be sent to DockerHub, allowing Jenkins to pull down these images and automatically build.
+
+* I will also use Nginx which will service as a reverse-proxy. It will be implemented to listen for traffic on a given port and redirect this traffic to a chosen port. It will also act as a load balancer.
+
+* I will use Ansible in order that I can create a master-node and a worker-node. This will allow me to successful use Jenkins to implement a rolling update of a new feature to my site. By doing so, the website will remain running whilst this new feature of being built allowing for a seamless transition for the users. 
+
 
 ## Architecture
 #### Database Structure
-
-##### Before
-![erd2](https://user-images.githubusercontent.com/64255340/82837018-d3592b80-9ebf-11ea-9271-0b79c1780bd6.png)
-
-I had initially planned to use the image above as my ERD however, I wanted to insure I had implemented what would allow me to achieve my MVP, and after which I could then build upon it and improve. 
 
 ##### Current
 ![erd1](https://user-images.githubusercontent.com/64255340/82837033-e1a74780-9ebf-11ea-8881-831d231daeee.png)
