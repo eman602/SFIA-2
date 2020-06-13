@@ -153,15 +153,24 @@ It is also shown below: -
 ![risk2](https://user-images.githubusercontent.com/64255340/84580472-4115ba80-adcf-11ea-828c-ab186b7606b8.png)
 
 ## Testing
-![coveragereport](https://user-images.githubusercontent.com/64255340/82816159-8b6fdf80-9e92-11ea-9dca-739e752fadd9.png)
+#### Test coverage for Service 1
+![testservice1](https://user-images.githubusercontent.com/64255340/84580981-63f69d80-add4-11ea-9fa6-7072eb5d2821.png)
+
+#### Test coverage for Service 2
+![testservice2](https://user-images.githubusercontent.com/64255340/84580987-6f49c900-add4-11ea-9f96-14c3263e6013.png)
+
+#### Test coverage for Service 3
+![testservice2](https://user-images.githubusercontent.com/64255340/84580987-6f49c900-add4-11ea-9f96-14c3263e6013.png)
+
+#### Test coverage for Service 4
+![testservice4](https://user-images.githubusercontent.com/64255340/84580997-7b358b00-add4-11ea-9749-2b34c79a894e.png)
 
 Pytest is a powerful tool used to test the functionality of code. There is a saying “an untested code is a broken code”. Although this may not necessarily be true, it does cause the belief that without tested code, there is no guarantee that the application created will continue to work when it is transferred from development environment to the production environment. Hence it is important that a high-test coverage is achieved. 
 
 Reason for this is that, it will first expose any errors in the code immediately and will also provide confidence that would allow developers to continue adding features without having to waste time and revisit previous written code that was perceived to be working. 
 
-In my own code, I achieved 99% coverage although my initial aim was to achieve 100% aim however, I was unable to trigger the code which would cause an automatic error to display upon the user pressing the delete button on the app without entering information. 
-
-For my own app, I wrote 23 different tests. 
+In my own code, I achieved an average of 87% test coverage although my initial aim was to achieve 100% aim however, 
+For my own app, I wrote 4 different tests. 
 
 ## Web application display of the app 
 ![DeleteMovie](https://user-images.githubusercontent.com/64255340/82816985-0c7ba680-9e94-11ea-8d98-2fe7bfa7ef66.png)
