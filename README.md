@@ -58,14 +58,17 @@ pushed to GitHub will be triggered and automatically built by Jenkins and deploy
 #### Database Structure
 
 ##### Current
-![erd1](https://user-images.githubusercontent.com/64255340/82837033-e1a74780-9ebf-11ea-8881-831d231daeee.png)
+![sqltableplan](https://user-images.githubusercontent.com/64255340/84569859-6bd92200-ad81-11ea-8f29-9d09eeac2b04.png)
 
-This image is currently what the structure of the database is built on as as shown, we have the foreign key of in the Movies table implemented from the primary key of the Books table, hence allowing for a relationship to occur between the tables.
+This image is currently what the structure of the database is built on as as shown, we have the primary key being the id of each name which will be auto incrementing for every name that is generated and persisted into the database. 
 
 #### User Case
-![usercase](https://user-images.githubusercontent.com/64255340/82837084-000d4300-9ec0-11ea-8376-a00455007ada.png)
+![userstory](https://user-images.githubusercontent.com/64255340/84569894-aba00980-ad81-11ea-8fb0-8fb22066ca69.png)
 
 This is an outline description of what is possible for the user to be able to do and also how the computer will respond to their request. Within the app, the users request will be recognised by the server through either the POST Method or the GET method.
+In more details, the user will be to access the site and simply look at names that have already been generated which is made possible by a code written that will retrieve the information and simply display that on the website. 
+On top of this, the user will be able to click on a generate buttom on the screen which simply refreshes the site and as it does so, it also display a random combination of names on the site and persist this on to the SQL database. 
+
 
 ## CI Pipeline
 ![CIpipeline](https://user-images.githubusercontent.com/64255340/82837352-aa856600-9ec0-11ea-9422-c6cfc59ed580.png)
