@@ -96,17 +96,17 @@ Finally, the application is run entirely using Nginx. It is designed to listen o
 #### Must have Have
  * You are required to create a micro-service orientated architecture for your application, this application must be composed of at least 4 services that work together.
  
-* Service 1 The core service – this will render the Jinja2 templates you need to interact with your application, it will also be responsible for communicating with the other 3 services, and finally for persisting some data in an SQL database.
+* Service 1 The core service – this will render the Jinja2 templates you need to interact with my application, it will also be responsible for communicating with the other 3 services, and finally for persisting some data in an SQL database.
 
 * Service 2 + 3
-These will both generate a random “Object”, this object can be whatever you like as we encourage creativity in this project.
+These will both generate a random “Object”, this object can be whatever l like as we encourage creativity in this project.
 
 
 * Service #4 This service will also create an “Object” however this “Object” must be based upon the results of service #2 + #3 using some pre-defined rules.  Please see below for an example of how this logic can look.
 
 * Kanban Board: Asana or an equivalent Kanban Board 
 
-* You will also need to demonstrate the working CI Pipeline that you have been able to build by rolling out updates to the system, without interrupting the user experience.  
+* I will also need to demonstrate the working CI Pipeline that you have been able to build by rolling out updates to the system, without interrupting the user experience.  
 
 #### Should Have
 * Web hooks should be used
@@ -118,35 +118,31 @@ These will both generate a random “Object”, this object can be whatever you 
 * Testing completed for front end of my application. 
 
 
- 
-
 ## Tracking my Project
-the link for my Trello can be found at : https://trello.com/b/jzxsxgkl/movie-and-book-app
+the link for my Trello can be found at : https://trello.com/b/iPcYe9QR/baby-name-generator-app
 
-![trello picture](https://user-images.githubusercontent.com/64255340/82814253-b0faea00-9e8e-11ea-9559-fe6f8b70f04e.png)
+![trelloboard](https://user-images.githubusercontent.com/64255340/84579580-c2b51a80-adc6-11ea-947e-bd2cdf9ffd3e.png)
 
 This Trello is designed to be read and interpreted from left to right with different categorising relating to different parts of the projects as explained below. 
 
-#### Things to do (Beck-end) 
- 
+#### Front End task
 
-This reflects the tasks relating to the logical parts of the app and the code required to complete it. Namely, I would need to construct code allowing users to add a movie or a book as well as code to allow users to update or delete items as they see fit. 
+This reflects the tasks relating to the logical parts of the app and the code required to complete it. Namely, I would need to construct code allowing users to access the site and generate a random name from it. 
 
-#### Things to do (Front-end) 
+#### Back End
+This refers to the logic my of site and what must take place in order for the outcome on the front end to occutr
 
-This refers to the websites and perhaps the design of it which will need to be completed in Flask. 
-
-#### Things to do (UCD & Database & Planning) 
+#### Documentation
 
 This category refers to tasks which are non-coding related are ideally based on analysis on risks, documentation of the process, creation of user stories and etc.  
 
-#### Things to do(Testing) 
+#### Testing task
 
 This category refers to testing of both the front-end and back-end of the project. The beck-end specifically will be tested using pytest. Altogether, there will need to be a high-test coverage and evidence of this shown. 
 
-#### Doing 
+#### In progress 
 This signifies the tasks which I am currently doing. 
-#### Done 
+#### Completed 
 This refers to tasks which are completed. 
 
 ## Risk Assessment 
