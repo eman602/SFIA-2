@@ -82,7 +82,9 @@ At the very beginning of the process, all the required work are put on Trello an
 
 The Jenkins project is built using a pipeline as opposed to a freestyle project, hence in order to keep files organised, a Jenkinsfile is utilised which essentially allows Jenkins to build specific parts of the application using environments that are prescribed to it. 
 An example is having it access different files to install docker and then set up ansible as well as having different files in different sections which the docker-compose file can launch. 
+
 Docker in the CI pipeline is where images of my containers are pushed to. Hence to clarify, my four microservices will each serve as a container and an image of each will be produced and pushed to my designated repository in DockerHub. This provides Jenkins the ability to the access my DockerHub as it is open source, and then pull down the image and run that image as part of the prerequisite to build my application. 
+
 There may also be instruction for Jenkins to update the docker images in my docker repository hence that can also be executed. 
 Ansible is also used in order to allow an environment to be initialised in the worker-node. It is also used to determine which of my nodes will play the role as the master node or the worker node. 
 Finally, the application is run entirely using Nginx. It is designed to listen on port 80 and redirect traffic to port 5000. 
