@@ -13,6 +13,7 @@ Trello : https://trello.com/b/jzxsxgkl/movie-and-book-app
 * [Methods](#methods)
 * [Architecture](#architecture)
 * [CI Pipeline](#ci-pipeline)
+* [MoSCoW Analysis](#moscow-analysis)
 * [Tracking my Project](#tracking-my-project)
 * [Risk Assessment ](#risk-assessment)
 * [Testing](#testing)
@@ -89,6 +90,8 @@ There may also be instruction for Jenkins to update the docker images in my dock
 Ansible is also used in order to allow an environment to be initialised in the worker-node. It is also used to determine which of my nodes will play the role as the master node or the worker node. 
 Finally, the application is run entirely using Nginx. It is designed to listen on port 80 and redirect traffic to port 5000. 
 
+
+## MoSCoW Analysis
 
 ## Tracking my Project
 the link for my Trello can be found at : https://trello.com/b/jzxsxgkl/movie-and-book-app
