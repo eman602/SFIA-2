@@ -3,6 +3,7 @@
 # Baby Name Generator
 ## LINKS
 Trello : https://trello.com/b/iPcYe9QR/baby-name-generator-app
+Presentation : https://onedrive.live.com/edit.aspx?action=edit&resid=67C6B66CC3D9FFE8!129&ithint=file%2cpptx&wdNewAndOpenCt=1592177144361&wdPreviousSession=6598b56b-e433-4d8f-82dd-46bcc83845c2&wdOrigin=OFFICECOM-WEB.MAIN.UPLOAD
 
 ## Content
 * [Brief](#brief)
