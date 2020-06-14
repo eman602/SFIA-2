@@ -154,9 +154,13 @@ It is also shown below: -
 
 ![matrix](https://user-images.githubusercontent.com/64255340/84592418-7f49c300-ae3d-11ea-836c-a23df7fe6406.jpg)
 
+This matrix show for the large part of my project, most of my risks  likelihood aswell the the impact(consequences) of it happening usually fell below the moderate(orange) and low(green) areas. The risk that I had to take care of mostly was that concerning exposing certain environment variables partaining to either my database url or the secret keys. 
+Upon reflection of the risk matrix in concern with my risk assessment I understood that I do not need to admend my risks as I related back to them throughout the project to ensure that the mitigation methods that I proposed were being adhered to. 
 
 
 ## Testing
+I tried within my project to adhere to some test driven development during my project, especially when I was attending to the code for my microservice 2 and 3. I had test in place to ensure that the random values which would be selected would always be in range.
+
 #### Test coverage for Service 1
 ![testservice1](https://user-images.githubusercontent.com/64255340/84580981-63f69d80-add4-11ea-9fa6-7072eb5d2821.png)
 
