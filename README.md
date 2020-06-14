@@ -20,7 +20,7 @@ Trello : https://trello.com/b/iPcYe9QR/baby-name-generator-app
 * [Licensing](#licensing)
 * [Acknowledgments](#acknowledgments)
 * [Contributors](#contributors)
-* [Author](#author)
+* [Author](#author) 
 
 ## Brief
 The aim of the app was to create an app which has its functions based upon 4 microservices which would be deployed using specific DevOps tools. The Architecture of the site will be micro-services orientated which must work together.
