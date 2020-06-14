@@ -1,12 +1,8 @@
 # SFIA-2
 
-# bookmovie_app
+# Baby Name Generator
 ## LINKS
-Presentation : https://onedrive.live.com/edit.aspx?resid=67C6B66CC3D9FFE8!116&cid=fe9c2097-c10b-49ee-bb65-5c554db87130&ithint=file%2cpptx&wdOrigin=OFFICECOM-WEB.MAIN.MRU
-
-Risk Assessment : https://onedrive.live.com/edit.aspx?resid=67C6B66CC3D9FFE8!105&cid=11e27e3c-647a-48fc-92a2-dde06427a580&ithint=file%2cxlsx&wdOrigin=OFFICECOM-WEB.MAIN.MRU
-
-Trello : https://trello.com/b/jzxsxgkl/movie-and-book-app
+Trello : https://trello.com/b/iPcYe9QR/baby-name-generator-app
 
 ## Content
 * [Brief](#brief)
