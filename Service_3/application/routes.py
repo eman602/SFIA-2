@@ -9,5 +9,5 @@ def secondname():
 
     response2=list2[random.randint(0, len(list2)-1)]
 
-    return response2
+    return response2.upper()
     
