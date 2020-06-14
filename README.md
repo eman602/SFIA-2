@@ -16,6 +16,7 @@ Trello : https://trello.com/b/jzxsxgkl/movie-and-book-app
 * [MoSCoW Analysis](#moscow-analysis)
 * [Tracking my Project](#tracking-my-project)
 * [Risk Assessment ](#risk-assessment)
+* [Deployment ](#deployment)
 * [Testing](#testing)
 * [Web application display of the app](#web-application-display-of-the-app)
 * [Issues with Application](#issues-with-application)
@@ -156,6 +157,29 @@ It is also shown below: -
 
 This matrix show for the large part of my project, most of my risks  likelihood aswell the the impact(consequences) of it happening usually fell below the moderate(orange) and low(green) areas. The risk that I had to take care of mostly was that concerning exposing certain environment variables partaining to either my database url or the secret keys. 
 Upon reflection of the risk matrix in concern with my risk assessment I understood that I do not need to admend my risks as I related back to them throughout the project to ensure that the mitigation methods that I proposed were being adhered to. 
+
+## Deployment
+
+![buildpipeline](https://user-images.githubusercontent.com/64255340/84593816-187cd780-ae46-11ea-8660-43533b3147e4.png)
+The deployment of my project is as shown below. With the left part showing some of the build history. As shown, as of 12/06/2020, I had implemented 91 total builds with each build essentially fulfulling a different purpose.
+The builds below 80 where for testing the visual aspect of the app and making sure they worked thoroughly and in situation where they did not, implementing the necessary changes and re-running those test again. 
+
+In this section I will outline the tools I used and the reasons behind using those tools as well as a brief justification of why I moved into cloud.
+
+Tools used for deployement: -
+* Jenkins
+Jenkins in definition is an open source automation tool which was written in java for the purpose of fulfilling business continuous integration problem. It allows the users to build and test the software projects continuously hence making it easier for developers to integrate changes to the project and it also allows for users such as myself to obtain a fresh build. 
+Aside from Jenkins, other options available would have been CircleCI, Red Hat and etc however I chose Jenkins not just because it is largely encouraged at QA but because Jenkins is much leaner at allowing for automating process when adding new code all the way through to acceptance testing. This Continuous delivery tool allows for a high level of automation of all steps.  Running Jenkins allows us to continuously check that the code compiles. The only few disadvantages of Jenkins is its initial setup.
+For my project, I constructed a Jenkins file which details exactly which directory Jenkins can go to execute every code required and build the necessary environment in order to allow the code to run as is required. 
+
+* Docker
+* Ansible
+* Pytest
+* Nginx
+
+
+
+
 
 
 ## Testing
