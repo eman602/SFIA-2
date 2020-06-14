@@ -1,6 +1,7 @@
 
 {% block body_content %}
 
+
 {{title}}
 <h1>Baby Name Generator</h1>
 <p>{{fullname}}</p>
@@ -17,5 +18,16 @@
     </tr>
     </table>
 {% endfor %}
+
+
+
+            {% for post in posts %}
+            <table>
+               <tr> 
+            <th> - Name ID: </b>{{ post.id }}</th>
+            <th> - Baby's Name: </b>{{ post.fullname }}</th>
+            </tr>
+            </table>
+        {% endfor %}
 
 {% endblock %}
