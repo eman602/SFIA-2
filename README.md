@@ -11,6 +11,7 @@ Trello : https://trello.com/b/iPcYe9QR/baby-name-generator-app
 * [CI Pipeline](#ci-pipeline)
 * [MoSCoW Analysis](#moscow-analysis)
 * [Tracking my Project](#tracking-my-project)
+* [Workflow](#workflow)
 * [Risk Assessment ](#risk-assessment)
 * [Deployment ](#deployment)
 * [Testing](#testing)
@@ -141,6 +142,12 @@ This category refers to testing of both the front-end and back-end of the projec
 This signifies the tasks which I am currently doing. 
 #### Completed 
 This refers to tasks which are completed. 
+
+## Workflow
+
+![workflow](https://user-images.githubusercontent.com/64255340/84597681-8ed90400-ae5d-11ea-804e-ff0f3529889f.jpg)
+
+
 
 ## Risk Assessment 
 
