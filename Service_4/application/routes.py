@@ -10,3 +10,6 @@ def name():
     fullname = firstname.text+ " "+secondname.text
 
     return fullname
+
+
+

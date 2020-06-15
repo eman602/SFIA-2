@@ -7,10 +7,12 @@ services:
     - target: 5000
       published: 5000
       protocol: tcp
+
     networks:
       - ingress
     deploy:
       replicas: 3
+
     environment:
         FULLNAME_DB_URI: ${FULLNAME_DB_URI}
         SECRET_KEY: ${SECRET_KEY}
@@ -69,5 +71,6 @@ services:
 networks:
   ingress:
       driver: overlay
+
 
     

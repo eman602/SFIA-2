@@ -8,6 +8,7 @@ def home():
     result = requests.get('http://service_4:5003/fullname')
     fullname1 = result.text
     fullnamedb= Names(fullname=fullname1)
+
     
     db.session.add(fullnamedb)
     db.session.commit()
